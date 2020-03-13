@@ -11,6 +11,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
+  <div class="page_container">
     <nav>
         <ul>
           <li><a href="#">Admissions</a></li>
@@ -75,39 +76,40 @@
       </div> 
       
       <div class="grid">
-          <div class="grid__team">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i class="far fa-user-circle A"></i>
+            <i class="far fa-user-circle B"></i>
+            <i class="far fa-user-circle C"></i>
+            <i class="far fa-user-circle D"></i>
+            <i class="far fa-user-circle E"></i>
             <p class="grid__text">Team</p>
           </div>
-          <div class="grid__board">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i class="far fa-user-circle A"></i>
+            <i class="far fa-user-circle B"></i>
+            <i class="far fa-user-circle C"></i>
+            <i class="far fa-user-circle D"></i>
+            <i class="far fa-user-circle E"></i>
             <p class="grid__text">Board</p>
           </div>
-          <div class="grid__mentors">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i class="far fa-user-circle A"></i>
+            <i class="far fa-user-circle B"></i>
+            <i class="far fa-user-circle C"></i>
+            <i class="far fa-user-circle D"></i>
+            <i class="far fa-user-circle E"></i>
             <p class="grid__text">Mentors</p>
             
         </div>
-        <div class="grid__advisors">
-          <i id="A"  class="far fa-user-circle"></i>
-          <i id="B"  class="far fa-user-circle"></i>
-          <i id="C"  class="far fa-user-circle"></i>
-          <i id="D"  class="far fa-user-circle"></i>
-          <i id="E"  class="far fa-user-circle"></i>
+        <div class="grid__card">
+          <i class="far fa-user-circle A"></i>
+          <i class="far fa-user-circle B"></i>
+          <i class="far fa-user-circle C"></i>
+          <i class="far fa-user-circle D"></i>
+          <i class="far fa-user-circle E"></i>
           <p class="grid__text">Advisors</p>
       </div>
+
     </div>    
         <div class="students">
             
@@ -124,18 +126,18 @@
         <section class="signup">
             <h3 class="signup__heading">Let's Chat.</h3>
             <p class="signup__text">Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the conversation going.</p>
-            <form>
-                <div class="form">
-                  <input placeholder="First Name"/>
-                  <input placeholder="Last Name"/>
-                </div>
-                <input placeholder="Email"/>
-                <input placeholder="Phone"/>
+            <form class="form_container">
+                <input class="form__input first_name" placeholder="First Name"/>
+                <input class="form__input last_name" placeholder="Last Name"/>
+                <span class="form__span">
+                  <input class="form__input email" placeholder="Email"/>
+                  <input class="form__input phone"  placeholder="Phone"/>
+                </span>
+                <button class="form__btn" type="submit">Submit</button>
              </form>   
-                <input id="submit" type="submit">
        
             </section>   
     
-   
+   </div>
 </body>
 </html>
