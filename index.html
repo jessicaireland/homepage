@@ -16,7 +16,7 @@
           <li><a href="#">Admissions</a></li>
           <li><a href="#">Programs</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a class="btn-schedule" href="#">Schedule a Tour</a></li>
+          <li><a class="btn-schedule btn--transform" href="#">Schedule a Tour</a></li>
         </ul>
       </nav>
   
@@ -75,37 +75,37 @@
       </div> 
       
       <div class="grid">
-          <div class="grid__team">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i id="A"  class="far fa-user-circle A"></i>
+            <i id="B"  class="far fa-user-circle B"></i>
+            <i id="C"  class="far fa-user-circle C"></i>
+            <i id="D"  class="far fa-user-circle D"></i>
+            <i id="E"  class="far fa-user-circle E"></i>
             <p class="grid__text">Team</p>
           </div>
-          <div class="grid__board">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i id="A"  class="far fa-user-circle A"></i>
+            <i id="B"  class="far fa-user-circle B"></i>
+            <i id="C"  class="far fa-user-circle C"></i>
+            <i id="D"  class="far fa-user-circle D"></i>
+            <i id="E"  class="far fa-user-circle E"></i>
             <p class="grid__text">Board</p>
           </div>
-          <div class="grid__mentors">
-            <i id="A"  class="far fa-user-circle"></i>
-            <i id="B"  class="far fa-user-circle"></i>
-            <i id="C"  class="far fa-user-circle"></i>
-            <i id="D"  class="far fa-user-circle"></i>
-            <i id="E"  class="far fa-user-circle"></i>
+          <div class="grid__card">
+            <i id="A"  class="far fa-user-circle A"></i>
+            <i id="B"  class="far fa-user-circle B"></i>
+            <i id="C"  class="far fa-user-circle C"></i>
+            <i id="D"  class="far fa-user-circle D"></i>
+            <i id="E"  class="far fa-user-circle E"></i>
             <p class="grid__text">Mentors</p>
             
         </div>
-        <div class="grid__advisors">
-          <i id="A"  class="far fa-user-circle"></i>
-          <i id="B"  class="far fa-user-circle"></i>
-          <i id="C"  class="far fa-user-circle"></i>
-          <i id="D"  class="far fa-user-circle"></i>
-          <i id="E"  class="far fa-user-circle"></i>
+        <div class="grid__card">
+          <i id="A"  class="far fa-user-circle A"></i>
+          <i id="B"  class="far fa-user-circle B"></i>
+          <i id="C"  class="far fa-user-circle C"></i>
+          <i id="D"  class="far fa-user-circle D"></i>
+          <i id="E"  class="far fa-user-circle E"></i>
           <p class="grid__text">Advisors</p>
       </div>
     </div>    
@@ -124,16 +124,17 @@
         <section class="signup">
             <h3 class="signup__heading">Let's Chat.</h3>
             <p class="signup__text">Kenzie Academy is no small commitment. If we've piqued your interest today, we'd love to keep the conversation going.</p>
-            <form>
-                <div class="form">
-                  <input placeholder="First Name"/>
-                  <input placeholder="Last Name"/>
-                </div>
-                <input placeholder="Email"/>
-                <input placeholder="Phone"/>
-             </form>   
-                <input id="submit" type="submit">
-       
+            
+                <form class="form__container">
+                  <input class="form__input first__name" placeholder="First Name"/>
+                  <input class="form__input last__name" placeholder="Last Name"/>
+                <span class="form__span">
+                    <input class="form__input email" placeholder="Email"/>
+                    <input class="form__input phone" placeholder="Phone"/>
+                </span>  
+                <button class="form__btn btn-animation" type="submit">Submit</button> 
+                </form>   
+                    
             </section>   
     
    

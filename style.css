@@ -39,9 +39,20 @@ h1, h2 {
     text-decoration: none;
   }
 
+  input {
+    margin: 5px;
+  }
+
+  /* Layout Styles */
+
   .btn-schedule {
     text-align: center;
 
+  }
+
+  .btn--transform:hover {
+    box-shadow: 7px 7px 7px rgb(12, 12, 61);
+    transition: box-shadow 0.5s;
   }
   
   .hero {
@@ -147,45 +158,39 @@ h1, h2 {
 .grid {
   display: flex;
   flex-direction: row;
+  text-align: center;
   /* padding: 2rem;
   /* margin: 2rem; */
 }
 
-.grid__team, .grid__board, .grid__mentors, .grid__advisors {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;                    
-  grid-column-gap: 1rem; 
-  background-color: aquamarine;
-  padding: 1rem;
-  margin: 0.5rem;                
+.A, .B {
+  position: relative;
+  right: 5px;
 }
-
-#A {
-  grid-column: 1 / span 3;
-  grid-row: 1;
-}
-#B {
-  grid-column: 4 / span 3;
-  grid-row: 1;
-}
-#C {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-}
-#D {
-  grid-column: 3 / span 2;
-  grid-row: 2;
-}
-#E {
-  grid-column: 5 / span 2;
-  grid-row: 2;
-}
+.A {grid-area: A}
+.B {grid-area: B}
+.C {grid-area: C}
+.D {grid-area: D}
+.E {grid-area: E}
 
 .grid__text {
-  display: grid;
-  text-align: center;
+  grid-area: gt;
 }
+
+.grid__card {
+  display: grid;
+  grid-template-areas: 
+  ". . A B . ."
+  ". C D E . ."
+  ". gt gt gt . .";
+  grid-template-columns: repeat(6 1fr);
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem;
+  margin: .5rem;
+}
+
+
 
 .students {
   display: flex;
@@ -219,7 +224,25 @@ h1, h2 {
 }
 
   .signup {
-    text-align: center;
+    height: 50%;
+  }
+
+  .form__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 60%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .email, .phone {
+    width: 47%;
   }
 
 
@@ -235,22 +258,7 @@ h1, h2 {
     width: 8em;  
   }
 
-  .form {
-    display: grid;
-    grid-template-columns: 100% 100% 50% 50%;
-
-  }
-  .signup form input[type=submit] {
-    border: none;  
-  }
-
-
-
-
-
-
-
-  #submit {
+  .form__btn {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -264,3 +272,18 @@ h1, h2 {
     cursor: pointer;
   }
   
+  .btn-animation {
+    animation-name: bt-color-submit;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+  }
+
+
+  @keyframes bt-color-submit {
+    from {
+      background-color: var(--color-second);
+    }
+    to {
+      background-color: rgb(187, 236, 203);
+    }
+  }
